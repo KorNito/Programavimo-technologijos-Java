@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:onClick="atsijungti"
+                android:text="Log out" />
+
+            <Button
+                android:id="@+id/btnProfilis"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:onClick="profilis"
+                android:text="Profile" />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Projects" />
+
+    <ListView
+        android:id="@+id/sarasas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
