@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.UsersController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <VBox prefHeight="400.0" prefWidth="235.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="49.0" prefWidth="417.0" />
+            <TableView fx:id="userTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox prefHeight="400.0" prefWidth="0.0" HBox.hgrow="ALWAYS">
+         <children>
+            <TextField fx:id="lLogin" promptText="Login" />
+            <TextField fx:id="lPass" promptText="Password" />
+            <TextField fx:id="lName" promptText="Name" />
+            <TextField fx:id="lSurname" promptText="Surname" />
+            <Button mnemonicParsing="false" onAction="#addPerson" text="Add" />
+         </children></VBox>
+   </children>
+</HBox>

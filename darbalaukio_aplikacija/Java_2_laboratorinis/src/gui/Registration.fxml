@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegistrationController">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="401.0" prefWidth="288.0">
+         <children>
+            <RadioButton fx:id="companyButton" mnemonicParsing="false" text="Company">
+               <toggleGroup>
+                  <ToggleGroup fx:id="user" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="personButton" mnemonicParsing="false" selected="true" text="Person" toggleGroup="$user" />
+            <Label text="Name/Title" textAlignment="RIGHT" />
+            <TextField fx:id="nameField" />
+            <Label text="Lastname" textAlignment="RIGHT" />
+            <TextField fx:id="lastnameField" />
+            <Label text="Email" textAlignment="RIGHT" />
+            <TextField fx:id="emailField" />
+            <Label text="Login" textAlignment="RIGHT" />
+            <TextField fx:id="loginField" />
+            <Label text="Password" textAlignment="RIGHT" />
+            <PasswordField fx:id="passwordField" />
+            <Label alignment="CENTER" text="Confirm password" textAlignment="RIGHT" />
+            <PasswordField fx:id="confirmField" />
+            <Button mnemonicParsing="false" onAction="#regsterUser" text="Register" />
+         </children>
+      </VBox>
+      <VBox layoutX="288.0" layoutY="-2.0" prefHeight="401.0" prefWidth="311.0" />
+   </children>
+</VBox>

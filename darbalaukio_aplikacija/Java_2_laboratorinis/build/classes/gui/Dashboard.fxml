@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DashboardController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openUserManager" text="Open user management" />
+                  <MenuItem mnemonicParsing="false" onAction="#openRegisterUser" text="Register user" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <PieChart fx:id="userS" prefHeight="375.0" prefWidth="299.0" />
+            <AreaChart fx:id="projectS" prefHeight="375.0" prefWidth="306.0" HBox.hgrow="ALWAYS">
+              <xAxis>
+                <NumberAxis label="User ID" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Number of projects" side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </HBox>
+   </children>
+</VBox>
